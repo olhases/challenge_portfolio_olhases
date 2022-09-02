@@ -1,18 +1,13 @@
 import time
-
-from pages.base_page import BasePage
-
 import os
 import unittest
-
-from selenium.webdriver.chrome.service import Service
 from selenium import webdriver
-
 from pages.dashboard import Dashboard
 from pages.login_page import LoginPage
 from utils.settings import DRIVER_PATH, IMPLICITLY_WAIT
 
-class TestLoginPage(unittest.TestCase):
+
+class TestSignOutPage(unittest.TestCase):
 
     @classmethod
     def setUp(self):
@@ -22,7 +17,8 @@ class TestLoginPage(unittest.TestCase):
         self.driver.fullscreen_window()
         self.driver.implicitly_wait(IMPLICITLY_WAIT)
 
-    def test_log_in_to_the_system(self):
+    @classmethod
+    def test_log_out_to_the_system(self):
         user_login = LoginPage(self.driver)
         user_login.check_the_text_of_the_box()
         user_login.title_of_page()
@@ -30,7 +26,8 @@ class TestLoginPage(unittest.TestCase):
         user_login.type_in_password('Test-1234')
         user_login.click_on_the_sign_in_button()
         dashboard_page = Dashboard(self.driver)
-        dashboard_page.title_of_page()
+        dashboard_page.click_on_the_sign_out_button()
+        time.sleep(3)
 
     @classmethod
     def tearDown(self):
