@@ -15,7 +15,7 @@ class AddMatches(BasePage):
     enemy_team_score_field_xpath = "//input[@name='enemyTeamScore']"
     date_xpath = "//input[@name='date']"
     match_at_home_radio_xpath = "//input[@value='true']"
-    match_out_home_radio_xpath = "(//input[@value='false']"
+    match_out_home_radio_xpath = "//input[@value='false']"
     submit_button_xpath = "//button[@type='submit']"
     search_field_xpath = "//input[@placeholder='Search…']"
     card_of_player_xpath = '//*[@id="MUIDataTableBodyRow-0"]/td[2]'
