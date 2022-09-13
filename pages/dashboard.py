@@ -3,7 +3,7 @@ from pages.base_page import BasePage
 
 class Dashboard(BasePage):
     expected_title = "Scouts panel"
-    dashboard_url = 'https://scouts-test.futbolkolektyw.pl/en'
+    dashboard_url = 'https://scouts.futbolkolektyw.pl/en/'
     Scouts_panel_h_6_xpath = "//child::div/h6"
     Main_page_button_xpath = "(//div[@role='button'])[1]"
     players_button_xpath = "(//div[@role='button'])[2]"
@@ -13,11 +13,11 @@ class Dashboard(BasePage):
     Matches_count_xpath = "(//div[@class='MuiPaper-root MuiPaper-elevation1 MuiPaper-rounded'])[2]"
     Report_count_xpath = "(//div[@class='MuiPaper-root MuiPaper-elevation1 MuiPaper-rounded'])[3]"
     Events_count_xpath = "(//div[@class='MuiPaper-root MuiPaper-elevation1 MuiPaper-rounded'])[4]"
-    Logo_Scouts_Panel_xpath = "//div[@title='Logo Scouts Panel']"
+    Logo_Scouts_Panel_xpath = "//div[@title]"
     text_xpath = "//child::div/p"
     dev_team_contact_hyperlink_xpath = "//span[normalize-space()='Dev team contact']"
     Shortcuts_h_2_xpath = "(//h2[normalize-space()='Shortcuts'])[1]"
-    add_player_button_xpath = "//span[normalize-space()='Add player']"
+    add_player_button_xpath = "/html/body/div[2]/div[1]/main/div[3]/div[2]/div/div/a/button/span[1]"
     Activity_h_2_xpath = "//h2[normalize-space()='Activity']"
     Max_Minston_xpath = "//span[normalize-space()='Max Minston']"
     Matches_xpath = "//span[normalize-space()='Matches']"

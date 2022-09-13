@@ -1,51 +1,86 @@
-# Task 1. Software configuration
+[Bugs report](https://docs.google.com/document/d/1mJq2o3L542W-oRubk7KbJLlzIFkZ8KUTZcoBUqk1V2w/edit?usp=sharing)
 
-## Subtask1. Why did I choose to participate in the challenge portfolio?
+**The purpose of the tests:** site function testing
+**Environment:** Windows 10 system, Chrome browser version 105.0.5195.102
 
-Hello, my name is Olha 👋
+### Tools
+* GitHub
+* Selenium IDE 
+* Selenium WebDriver
+* SelectorsHub, xPath Finder
+* PyCharm
+* HTML, Python
+* Google Docs
+* [RobotFramework](https://github.com/olhases/test_robotframework)
 
-I'm taking part in this portfolio_challenge because I'm interested in trying new things. In the direction of automatic testing, I looked for a long time, but I thought that it was very difficult. Seeing the opportunity to learn this, I thought "why not?".  At the same time, I was very interested in the possibility of an internship, so I ended up here.
+### All Test Cases
+* Login to the system
+* Remind password
+* Change language
+* Add player
+* Add match
+* Sign out
 
-Thank you for this opportunity, I will be glad to spend the next 6 weeks with you and learn new things from you.
+### Reproduction steps
 
-## TASK 2: selectors
-### Subtask 1: Searching for selectors on the login pageList all the elements that are on the login page.
+#### Login to the system
+1. go to login page
+2. check title of the box
+3. check title of the page
+4. type email in login field 
+5. type password in password field 
+6. click on sign in button
+7. check the title of main page
 
-#### scouts_panel_h5_xpath
-* //*[@id="__next"]/form/div/div[1]/a
-* (//h5[normalize-space()='Scouts Panel'])[1]
-* //child::div/h5
+#### Remind password
+1. go to login page
+2. check title of the box
+3. check title of the page
+4. click on the Remind password hyperlink
+5. type email in e-mail field 
+6. click on the Send button
 
-#### login_field_xpath
-* //*[@id="login"]
-* //input[@id="login"]
-* (//input[@id='login'])[1]
-* //*[text()="Login"]
+#### Sign out
+1. go to login page
+2. check title of the box
+3. check title of the page
+4. type email in login field 
+5. type password in password field 
+6. click on sign in button
+7. check the title of main page
+8. click on Sign out button
 
-#### password_field_xpath
-* //*[@id="password"]
-* //input[@id='password']
-* //*[text()="Password"]
-* (//label[normalize-space()='Password'])[1]
+#### Change language on the main page
+1. go to login page
+2. check title of the box
+3. check title of the page
+4. type email in login field 
+5. type password in password field 
+6. click on sign in button
+7. check the title of main page
+8. click on English button
 
-#### remind_password_hyperlink_xpath
-* //*[@id="__next"]/form/div/div[1]/a
-* //*[text()="Remind password"]
-* //child::div/a
+#### Add player
+1. check title of the box
+2. check title of the page
+3. type email in login field 
+4. type password in password field 
+5. click on sign in button
+6. check the title of main page
+7. click on Add player button
+8. type in name field
+9. type in surname field 
+10. type in age
+11. type in main position
+12. click on Submit button
 
-#### english_multiselect_xpath
-* //*[@id="__next"]/form/div/div[2]/div/div
-* //div[@role='button']
-* //*[text () ="English"]
 
-#### polish_multiselect_xpath
-* //*[@id="__next"]/form/div/div[2]/div/div
-* //div[@role='button']
-* //*[text () ="Polski"]
+#### Add match
+1. go to login page
+2. check title of the box
+3. check title of the page
+4. type email in login field 
+5. type password in password field 
+6. click on sign in button
+7. check the title of main page
 
-#### sing_in_button_xpath
-* //*[@id="__next"]/form/div/div[2]
-* //*[@class="MuiButton-label"]
-* //*[@class="MuiTouchRipple-root"]
-* //span[@class='MuiButton-label']
-* //child::div/button

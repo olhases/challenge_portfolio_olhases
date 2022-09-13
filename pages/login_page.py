@@ -7,7 +7,7 @@ class LoginPage(BasePage):
     remind_password_hyperlink_xpath = "//child::div/a"
     MuiSelect_button_xpath = "//div[@role='button']"
     sign_in_button_xpath = "//child::div/button"
-    login_url = 'https://scouts-test.futbolkolektyw.pl/en'
+    login_url = 'https://scouts.futbolkolektyw.pl/en/'
     expected_title = "Scouts panel - sign in"
     title_of_box_xpath = "//child::div/h5"
     header_of_box = 'Scouts Panel'

@@ -18,7 +18,7 @@ class AddMatches(BasePage):
     match_out_home_radio_xpath = "//input[@value='false']"
     submit_button_xpath = "//button[@type='submit']"
     search_field_xpath = "//input[@placeholder='Search…']"
-    card_of_player_xpath = '//*[@id="MUIDataTableBodyRow-0"]/td[2]'
+    card_of_player_xpath = '//*[@id="MUIDataTableBodyRow-02677958699365781-0"]/td[2]'
 
     def type_in_my_team_field(self, my_team):
         self.field_send_keys(self.my_team_field_xpath, my_team)

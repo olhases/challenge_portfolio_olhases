@@ -4,7 +4,7 @@ from utils.settings import DEFAULT_LOCATOR_TYPE
 
 
 class AddPlayer(BasePage):
-    name_field_xpath = "//input[@name='name']"
+    name_field_xpath = "//div[@class='Toastify']"
     surname_field_xpath = "//input[@name='surname']"
     age_xpath = "//input[@name='age']"
     main_position_field_xpath = "//input[@name='mainPosition']"
